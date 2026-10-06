@@ -1,0 +1,30 @@
+{
+    // Usa o gopls (Language Server) para autocompletar e navegação avançada
+    "go.useLanguageServer": true,
+    // Formata o código e organiza os imports automaticamente ao salvar
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    // Configurações do gopls para análise em tempo real
+    "go.languageServerFlags": [
+        "-remote=auto"
+    ],
+    "gopls": {
+        "ui.diagnostic.staticcheck": true, // Ativa análises extras de qualidade
+        "formatting.gofumpt": true // Opcional: um formatador mais rígido que o gofmt
+    },
+    // Suporte para testes: exibe o histórico de cobertura no editor
+    "go.coverOnSave": false,
+    "go.testFlags": [
+        "-v"
+    ],
+    // Melhorias visuais para Go
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4,
+        "editor.suggest.snippetsPreventQuickSuggestions": false
+    },
+    // Ajuda a evitar erros de indentação visual
+    "editor.guides.bracketPairs": true
+}
