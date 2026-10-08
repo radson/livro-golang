@@ -1,5 +1,5 @@
 // Fetch exibe o conteudo encontrado em cada URL especificada
-// 1.8: Prefixo http:// seja acrescentado caso esteja faltando.
+// 1.9: Mostrar url e status http
 
 package main
 
